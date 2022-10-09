@@ -20,7 +20,7 @@
         let item = {};
         item.name = document.querySelector(".item_title").innerHTML;
         item.price = document.querySelector(".item_amt").innerHTML;
-        item.image = document.querySelector(".item_img").src;
+        item.image = document.querySelector(".product_img").src;
         let shoppingCart = JSON.parse(localStorage.getItem("shoppingCart"));
         if (shoppingCart == null) shoppingCart = [];
         shoppingCart.push(item);
