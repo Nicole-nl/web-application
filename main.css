@@ -1,0 +1,129 @@
+.product_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 20px;
+}
+
+.product_img {
+  width: 400px;
+  height: 400px;
+  margin: 20px;
+}
+
+.thumbnail_img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.model_label {
+  color: grey;
+}
+
+.shopping_cart_container {
+  display: grid;
+  grid-template-rows: 50px 1fr 110px;
+  border: 1px solid black;
+  margin: 0 20px;
+}
+
+.shoppingcart_label {
+  text-align: center;
+  background-color: antiquewhite;
+}
+
+.cart_item {
+  display: grid;
+  grid-template-columns: 60px 5fr 2fr;
+  grid-template-rows: 1fr 40px;
+  margin: 10px;
+}
+
+.cart_item_img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid grey;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.total_label {
+  grid-column: 1 / span 2;
+}
+
+.btn-remove {
+  grid-column: 2;
+}
+
+.btn-checkout {
+  grid-column: 1 / span 3;
+}
+
+.main_container {
+  display: grid;
+  grid-template-columns: 1fr 350px;
+  margin: 20px 0;
+}
+
+.products_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 350px 350px;
+  gap: 20px;
+  margin-left: 20px;
+}
+
+.tile_container {
+  display: grid;
+  grid-template-rows: 1fr 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.tile_bottom {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin-top: 10px;
+  gap: 10px;
+}
+
+.tile_top {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  gap: 10px;
+  justify-items: center;
+}
+
+.product_image {
+  width: 200px;
+  height: 200px;
+}
+
+.product_name {
+  font-size: 20px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 120px 330px;
+  justify-content: center;
+  padding: 10px 0;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 2.5rem;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+@media screen and (max-width: 1000px) {
+  .main_container {
+    grid-template-columns: 1fr;
+  }
+}
